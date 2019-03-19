@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination',//出现小点
+        pagination: '.swiper-pagination',
         loop: true
       },
       imglist: [ {
