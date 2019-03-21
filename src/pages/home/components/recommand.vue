@@ -2,7 +2,7 @@
   <div class="">
      <div class="title">热销推荐</div>
      <ul>
-         <li class="item" v-for="item of imglist" :key="item.id">
+         <li class="item" v-for="item of list" :key="item.id">
              <img class="item-img" :src="item.url">
              <div class="item-info">
                  <p class="item-title">{{item.title}}</p>
@@ -16,23 +16,15 @@
 <script>
 export default {
   name: 'HomeRecommand',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true
-      },
-      imglist: [ {
-        id: '001',
-        url: 'https://imgs.qunarzz.com/sight/p0/1503/b4/b4834f16bc8f8091.water.jpg_256x160_c5987cec.jpg',
-        title: '周六畅玩',
-        desc: '浪漫首站，浪漫的主题乐园123456789000'
-      }, {
-        id: '002',
-        url: 'https://imgs.qunarzz.com/sight/p0/1503/b4/b4834f16bc8f8091.water.jpg_256x160_c5987cec.jpg',
-        title: '周六畅玩',
-        desc: '浪漫首站，浪漫的主题乐园'
-      }]
+      }
     }
   }
 }

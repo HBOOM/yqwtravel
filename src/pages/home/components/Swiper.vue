@@ -1,8 +1,8 @@
 <template>
   <div class="swiper-wrapped">
-   <swiper :options="swiperOption" >
+   <swiper :options="swiperOption" v-if="showSwiper" >
     <!-- slides -->
-    <swiper-slide v-for="item of imglist" v-bind:key="item.id">
+    <swiper-slide v-for="item of list" v-bind:key="item.id">
         <img :src="item.url" class="swiper-img">
     </swiper-slide>
     <div class="swiper-pagination"  slot="pagination"></div>
@@ -13,19 +13,20 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    list: Array // 获取的是外部的空数组，ajax数据获取完成之后，在重新渲染，swiper应该由完整数组创建--问题：默认显示最后一个页面
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true
-      },
-      imglist: [ {
-        id: '001',
-        url: 'https://imgs.qunarzz.com/p/tts4/1701/6d/c48662846ee9aa02.jpg_r_390x260x90_85e7c536.jpg'
-      }, {
-        id: '002',
-        url: 'https://imgs.qunarzz.com/p/tts9/1710/ee/7d44297c48ebfe02.jpg_r_390x260x90_c3b80ff8.jpg'
-      }]
+      }
+    }
+  },
+  computed: { // 计算属性
+    showSwiper () {
+      return this.list.length // 逻辑尽量不要出现在上端
     }
   }
 }

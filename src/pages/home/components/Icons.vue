@@ -16,10 +16,13 @@
 <script>
 export default {
   name: 'IconHome',
+  props: {
+    list: Array
+  },
   computed: {
     pages () {
       const pages = [ ]
-      this.imglist.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
@@ -34,49 +37,7 @@ export default {
       swiperOption: {
         autoplay: false // 取消自动循环切换
       },
-      NOTE: '之前发现图标一直只显示一个的问题是，每一个iconlist都被slide包围，沾满一行',
-      imglist: [ {
-        id: '001',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '002',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '003',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '004',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '005',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '006',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '007',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '008',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '009',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }, {
-        id: '010',
-        url: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869169037,1728020504&fm=58&s=95F35F36EC73B6014C2583EF03007027&bpow=121&bpoh=75',
-        txt: '热门景点'
-      }
-      ]
+      NOTE: '之前发现图标一直只显示一个的问题是，每一个iconlist都被slide包围，沾满一行'
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="">
      <div class="title">周末去哪儿</div>
      <ul>
-         <li class="item" v-for="item of imglist" :key="item.id">
+         <li class="item" v-for="item of list" :key="item.id">
              <div class="item-img-wrap">
              <img class="item-img" :src="item.url">
              </div>
@@ -18,23 +18,15 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true
-      },
-      imglist: [ {
-        id: '001',
-        url: 'https://imgs.qunarzz.com/sight/p0/1503/b4/b4834f16bc8f8091.water.jpg_256x160_c5987cec.jpg',
-        title: '周六畅玩',
-        desc: '浪漫首站，浪漫的主题乐园'
-      }, {
-        id: '002',
-        url: 'https://imgs.qunarzz.com/sight/p0/1503/b4/b4834f16bc8f8091.water.jpg_256x160_c5987cec.jpg',
-        title: '周六畅玩',
-        desc: '浪漫首站，浪漫的主题乐园'
-      }]
+      }
     }
   }
 }
