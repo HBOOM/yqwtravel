@@ -38,5 +38,8 @@ export default {
       height 1.65rem
       line-height 1.65rem
       margin-right 0.2rem
-      margin-top 0.5rem
+      margin-top 0.4rem
+      border 0.08rem solid white
+      box-shadow 0.01rem 0.01rem 0.01rem #888888
+      border-radius 0.05rem
 </style>

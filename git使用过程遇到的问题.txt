@@ -1,0 +1,10 @@
+1、git强制覆盖：
+    git fetch --all
+    git reset --hard origin/master
+    git pull
+
+2、git冲突解决
+   git stash//缓存
+   git pull origin 分支
+   git stash pop 
+   git stash clear
