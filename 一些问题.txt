@@ -1,0 +1,43 @@
+1、static/mock在gitignore文件中添加就会忽略上传
+
+2、遇到为什么在使用router-link to 其他页面时，会发生地址栏改变但是页面没有刷新（Vue 路由切换时页面内容没有重新加载）,所有之前遇到的关于设置HOME为主页面却没有效果，放在App.VUE才有，均是因为router-view的原因，未在app.vue文件下写入
+<template>
+  <div id="app">
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+  </div>
+</template>
+
+keep-alive是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM
+
+参考：https://blog.csdn.net/u010419337/article/details/79443360
+
+
+使用Vue组件切换过程钩子activated(keep-alive组件激活时调用)，而不是挂载钩子mounted
+
+<script>
+export default {
+  // ...
+  activated: function() {
+    this.getCase()
+  }
+}
+</script>
+
+3、引入公共文件stylus时，路径文件报错
+
+解决方式1：不在webpack.base.conf.js配置，在文件中@代表src目录，~符号必须要
+@import '~@/assets/styles/variables.styl'
+
+解决方式2：配置webpack.base.conf.js
+ resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+      'styles': resolve('src/assets/styles'),
+      'common': resolve('src/common')
+    }
+  }
+
