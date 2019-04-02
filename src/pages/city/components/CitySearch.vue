@@ -14,7 +14,6 @@ export default {
 @import '~styles/variables.styl'
 .search
   margin 0 auto
-  border-top 0.01rem solid white
   background $bgcolor
   height 2.4rem
   line-height 2.4rem
@@ -22,6 +21,7 @@ export default {
   justify-content center
   align-items center
   padding 0 0.3rem
+  font-size 0.8rem
   .inputsty
     height 2rem
     line-height 2rem

@@ -39,7 +39,7 @@ export default {
  overflow hidden
  width 100%
  height 0
- padding-bottom 70%//解决抖动问题，保持宽高比
+ padding-bottom 50%//解决抖动问题，保持宽高比
  background #808080
   .swiper-img
     width 100%

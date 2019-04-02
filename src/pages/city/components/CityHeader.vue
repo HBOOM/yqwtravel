@@ -21,7 +21,7 @@ export default {
   display -webkit-flex
   display flex
   background-color $bgcolor
-  line-height 2.6rem
+  line-height 2.8rem
   color white
   text-align center
   .iconsty
