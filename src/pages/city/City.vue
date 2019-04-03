@@ -2,7 +2,7 @@
   <div>
     <CityHeader></CityHeader>
     <CitySearch></CitySearch>
-    <CityHotList :hotCity="hotCity" :DetailCity="DetailCity"></CityHotList>
+    <CityHotList :hotCity="hotCity" :DetailCity="DetailCity" :currentCity=" currentCity"></CityHotList>
     <CityLetterList :letter="letter"></CityLetterList>
   </div>
 </template>
@@ -22,13 +22,16 @@ export default {
     CityLetterList
   },
   mounted () {
+    this.currentCity = this.$route.query.city
+    console.log(this.currentCity)
     this.getCityInfo()
   },
   data () {
     return {
       hotCity: [],
       DetailCity: {},
-      letter: []
+      letter: [],
+      currentCity: ''
     }
   },
   methods: {

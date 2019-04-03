@@ -1,6 +1,6 @@
 <template>
      <div class="header">
-         <span class="iconfont iconsty">&#xe624;</span>
+         <span class="iconfont iconsty" v-on:click="ReturnBack">&#xe624;</span>
          <div class="btn">
            <div class="internal">国内城市</div>
            <div class="internal">国外城市</div>
@@ -10,7 +10,12 @@
 
 <script>
 export default {
-  name: 'CityHeader'
+  name: 'CityHeader',
+  methods: {
+    ReturnBack () {
+      window.history.go(-1)// 返回上一层
+    }
+  }
 }
 </script>
 

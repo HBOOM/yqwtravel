@@ -4,7 +4,7 @@
     <div class="HotList " ref="wrapper">
         <div class="localtion  border-topbottom" >
             <span>当前城市：</span>
-            <div class="currentBtn">北京</div>
+            <div class="currentBtn">{{currentCity}}</div>
         </div>
         <div class="Btn  border-topbottom">
             <div class="title border-topbottom">热门城市</div>
@@ -27,7 +27,8 @@ export default {
   name: 'CityHotList',
   props: {
     hotCity: Array,
-    DetailCity: Object
+    DetailCity: Object,
+    currentCity: String
   },
   data () {
     return {
