@@ -41,3 +41,6 @@ export default {
     }
   }
 
+updated 是在页面挂载完成之后执行函数的内容
+利用函数节流作为页面性能优化之一timer
+this.$refs['A'][0]为A的dom结点信息

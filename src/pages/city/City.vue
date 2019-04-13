@@ -2,8 +2,8 @@
   <div>
     <CityHeader></CityHeader>
     <CitySearch :DetailCity="DetailCity"></CitySearch>
-    <CityHotList :hotCity="hotCity" :DetailCity="DetailCity" :currentCity=" currentCity"></CityHotList>
-    <CityLetterList :letter="letter"></CityLetterList>
+    <CityHotList :indexletter="indexletter" :hotCity="hotCity" :DetailCity="DetailCity" :currentCity=" currentCity"></CityHotList>
+    <CityLetterList :DetailCity="DetailCity" @change="handletter"></CityLetterList>
   </div>
 </template>
 
@@ -31,10 +31,15 @@ export default {
       hotCity: [],
       DetailCity: {},
       letter: [],
-      currentCity: ''
+      currentCity: '',
+      indexletter: ''
     }
   },
   methods: {
+    handletter (e) {
+      console.log(e)
+      this.indexletter = e
+    },
     getCityInfo () {
       axios.get('/api/city.json').then(this.getInfoSucc)
     },
@@ -44,9 +49,6 @@ export default {
       if (self.ret) {
         this.hotCity = self.data.hotCities
         this.DetailCity = self.data.cities
-        for (let i in this.DetailCity) {
-          this.letter.push(i)
-        }
         console.log(this.letter)
       }
     }
