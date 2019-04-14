@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
+import store from './store'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/iconfont/iconfont.css'
@@ -17,6 +18,7 @@ FastClick.attach(document.body)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

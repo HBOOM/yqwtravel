@@ -24,7 +24,7 @@ export default {
   }
 }
 </script>
-
+{path:'/city', query:{city:city}}
 3、引入公共文件stylus时，路径文件报错
 
 解决方式1：不在webpack.base.conf.js配置，在文件中@代表src目录，~符号必须要

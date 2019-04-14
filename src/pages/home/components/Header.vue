@@ -2,7 +2,7 @@
    <div class="header">
      <div class="header-left"><span class="iconfont icon-left">&#xe624;</span></div>
      <div class="header-input"><span class="iconfont">&#xe632;</span>酒店/景点/地点</div>
-     <router-link :to="{path:'/city', query:{city:city}}">
+     <router-link :to="'city'">
        <div class="header-right">
          {{this.city}}
          <span class="iconfont icon-right">&#xe615;</span>
@@ -12,10 +12,11 @@
 </template>
 
 <script>
+import { mapState } from 'Vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>

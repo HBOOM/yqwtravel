@@ -5,7 +5,7 @@
      </div>
      <div class="search-content"  ref="wrapper" v-show="keyword">
        <ul>
-         <li class="itemCity border-bottom" v-for="item of list" :key="item.id">{{item.name}}</li>
+         <li class="itemCity border-bottom" @click="handhot(item.name)" v-for="item of list" :key="item.id">{{item.name}}</li>
          <li class="itemCity border-bottom" v-show="hasdata">没有符合条件的数据！</li>
       </ul>
      </div>
@@ -27,6 +27,13 @@ export default {
       keyword: '',
       list: [],
       timer: null // 节流函数标识
+    }
+  },
+  methods: {
+    handhot (name) {
+      // this.$store.dispatch('changeCity', name)
+      this.$store.commit('changeCity', name)
+      this.$router.push('/')
     }
   },
   computed: {
