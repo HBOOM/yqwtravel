@@ -2,8 +2,8 @@
   <div class="">
      <div class="title">周末去哪儿</div>
      <ul>
-      <router-link to="detail">
-         <li class="item" v-for="item of list" :key="item.id">
+         <router-link  tag="li"
+         to="detail" class="item" v-for="item of list" :key="item.id">
              <div class="item-img-wrap">
              <img class="item-img" :src="item.url">
              </div>
@@ -11,7 +11,6 @@
                  <p class="item-title">{{item.title}}</p>
                  <p class="item-desc">{{item.desc}}</p>
              </div>
-         </li>
       </router-link>
      </ul>
   </div>

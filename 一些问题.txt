@@ -1,6 +1,6 @@
-1¡¢static/mockÔÚgitignoreÎÄ¼þÖÐÌí¼Ó¾Í»áºöÂÔÉÏ´«
+1ï¿½ï¿½static/mockï¿½ï¿½gitignoreï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¾Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½
 
-2¡¢Óöµ½ÎªÊ²Ã´ÔÚÊ¹ÓÃrouter-link to ÆäËûÒ³ÃæÊ±£¬»á·¢ÉúµØÖ·À¸¸Ä±äµ«ÊÇÒ³ÃæÃ»ÓÐË¢ÐÂ£¨Vue Â·ÓÉÇÐ»»Ê±Ò³ÃæÄÚÈÝÃ»ÓÐÖØÐÂ¼ÓÔØ£©,ËùÓÐÖ®Ç°Óöµ½µÄ¹ØÓÚÉèÖÃHOMEÎªÖ÷Ò³ÃæÈ´Ã»ÓÐÐ§¹û£¬·ÅÔÚApp.VUE²ÅÓÐ£¬¾ùÊÇÒòÎªrouter-viewµÄÔ­Òò£¬Î´ÔÚapp.vueÎÄ¼þÏÂÐ´Èë
+2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÊ²Ã´ï¿½ï¿½Ê¹ï¿½ï¿½router-link to ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½Ê±ï¿½ï¿½ï¿½á·¢ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ä±äµ«ï¿½ï¿½Ò³ï¿½ï¿½Ã»ï¿½ï¿½Ë¢ï¿½Â£ï¿½Vue Â·ï¿½ï¿½ï¿½Ð»ï¿½Ê±Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ø£ï¿½,ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HOMEÎªï¿½ï¿½Ò³ï¿½ï¿½È´Ã»ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½App.VUEï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªrouter-viewï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½app.vueï¿½Ä¼ï¿½ï¿½ï¿½Ð´ï¿½ï¿½
 <template>
   <div id="app">
     <keep-alive>
@@ -9,12 +9,12 @@
   </div>
 </template>
 
-keep-aliveÊÇVueµÄÄÚÖÃ×é¼þ£¬ÄÜÔÚ×é¼þÇÐ»»¹ý³ÌÖÐ½«×´Ì¬±£ÁôÔÚÄÚ´æÖÐ£¬·ÀÖ¹ÖØ¸´äÖÈ¾DOM
+keep-aliveï¿½ï¿½Vueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ö¹ï¿½Ø¸ï¿½ï¿½ï¿½È¾DOM
 
-²Î¿¼£ºhttps://blog.csdn.net/u010419337/article/details/79443360
+ï¿½Î¿ï¿½ï¿½ï¿½https://blog.csdn.net/u010419337/article/details/79443360
 
 
-Ê¹ÓÃVue×é¼þÇÐ»»¹ý³Ì¹³×Óactivated(keep-alive×é¼þ¼¤»îÊ±µ÷ÓÃ)£¬¶ø²»ÊÇ¹ÒÔØ¹³×Ómounted
+Ê¹ï¿½ï¿½Vueï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½ï¿½ï¿½activated(keep-aliveï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¹ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½mounted
 
 <script>
 export default {
@@ -25,12 +25,12 @@ export default {
 }
 </script>
 {path:'/city', query:{city:city}}
-3¡¢ÒýÈë¹«¹²ÎÄ¼þstylusÊ±£¬Â·¾¶ÎÄ¼þ±¨´í
+3ï¿½ï¿½ï¿½ï¿½ï¿½ë¹«ï¿½ï¿½ï¿½Ä¼ï¿½stylusÊ±ï¿½ï¿½Â·ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 
-½â¾ö·½Ê½1£º²»ÔÚwebpack.base.conf.jsÅäÖÃ£¬ÔÚÎÄ¼þÖÐ@´ú±ísrcÄ¿Â¼£¬~·ûºÅ±ØÐëÒª
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½webpack.base.conf.jsï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½srcÄ¿Â¼ï¿½ï¿½~ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½Òª
 @import '~@/assets/styles/variables.styl'
 
-½â¾ö·½Ê½2£ºÅäÖÃwebpack.base.conf.js
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½webpack.base.conf.js
  resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -41,6 +41,10 @@ export default {
     }
   }
 
-updated ÊÇÔÚÒ³Ãæ¹ÒÔØÍê³ÉÖ®ºóÖ´ÐÐº¯ÊýµÄÄÚÈÝ
-ÀûÓÃº¯Êý½ÚÁ÷×÷ÎªÒ³ÃæÐÔÄÜÓÅ»¯Ö®Ò»timer
-this.$refs['A'][0]ÎªAµÄdom½áµãÐÅÏ¢
+updated ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½Ö´ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÒ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½Ö®Ò»timer
+this.$refs['A'][0]ÎªAï¿½ï¿½domï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+
+åœ¨ä½¿ç”¨è¿‡ç¨‹ä¸­ï¼Œå‡ºçŽ°swiperåˆ†é¡µå¤±æ•ˆï¼Œå› ä¸ºé¡µé¢æ‰“å¼€æ˜¯éœ€è¦é‡æ–°è®¡ç®—ï¼Œé€šè¿‡observeï¼Œobserparentå‚æ•°è§£å†³
+åŒæ—¶åœ¨è¿™å‡ºçŽ°åº•éƒ¨çš„1/2åˆ†é¡µå™¨ï¼Œä½¿ç”¨çš„swiper pagnationtypeç±»åž‹
+ä»¥åŠå‡ºçŽ°åˆ†é¡µå™¨ä¸å‡ºçŽ°çš„åŽŸå› ï¼šoverflowhidden + optionå˜é‡çš„swiperoptionæ”¾é”™ä½ç½®
