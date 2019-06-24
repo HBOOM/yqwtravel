@@ -1,5 +1,6 @@
 <template>
     <div class="wrapper">
+      <router-link to='/' class="header-left"><span class="iconfont icon-left">&#xe624;</span></router-link>
         <div class="swiper-img" @click="handleClick" >
           <img  class="imgsty" src=" https://imgs.qunarzz.com/sight/p0/1503/b4/b4834f16bc8f8091.water.jpg_256x160_c5987cec.jpg">
           <div class="swiper-word">
@@ -8,33 +9,72 @@
           </div>
         </div>
         <gallary @handleShow="ShowContent" v-show="showwin"></gallary>
+         <GameHeader class="_gameHeader" v-show="!ShowAbs" :style="StyTrans">
+        </GameHeader>
+        <div class="FillDock"></div>
     </div>
 </template>
 
 <script>
+import GameHeader from '@/pages/detail/components/GameHeader'
 import gallary from '@/common/gallary/gallary'
+import CommonTransition from '@/common/transition'
 export default {
   name: 'Ddetail',
   components: {
-    gallary
+    gallary,
+    CommonTransition,
+    GameHeader
   },
   data () {
     return {
-      showwin: false
+      showwin: false,
+      ShowAbs: true,
+      StyTrans: {
+        opactiy: 0
+      }
     }
   },
   methods: {
+    ScrollTopMethod () {
+      const top = document.documentElement.scrollTop
+      if (top > 30) {
+        this.ShowAbs = false
+        var opacity = (top / 130) > 1 ? 1 : (top / 130)
+        console.log(opacity)
+        this.StyTrans = {
+          opacity: opacity
+        }
+      } else {
+        this.ShowAbs = true
+      }
+    },
     handleClick () {
-        this.showwin = true
-      },
+      this.showwin = true
+    },
     ShowContent () {
       this.showwin = false
-      }
+    }
+  },
+  activated () {
+    window.addEventListener('scroll', this.ScrollTopMethod)
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+.FillDock
+  width:100%
+  padding-bottom:50rem
+.header-left
+  position:absolute
+  left:0rem
+  top:0.4rem
+  padding:0.3rem
+  z-index:99
+  color:white
+  background:rgba(0,0,0,.5)
+  border-radius:50%
 .imgcontent
   position:absolute
   top:0

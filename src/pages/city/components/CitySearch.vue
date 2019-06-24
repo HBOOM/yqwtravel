@@ -26,7 +26,7 @@ export default {
     return {
       keyword: '',
       list: [],
-      timer: null // 节流函数标识
+      timer: null // 节流函数标识·
     }
   },
   methods: {
@@ -36,6 +36,7 @@ export default {
       this.$router.push('/')
     }
   },
+
   computed: {
     hasdata () {
       return !this.list.length

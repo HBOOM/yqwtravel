@@ -21,15 +21,15 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination',
         paginationType: 'fraction',
-        observeParents:true,
-        observer:true
+        observeParents: true,
+        observer: true
       }
     }
   },
   methods: {
     handleBack () {
-      this.$emit('handleShow',false)
-      }
+      this.$emit('handleShow', false)
+    }
   }
 }
 </script>
