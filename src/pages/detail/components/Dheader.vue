@@ -41,7 +41,6 @@ export default {
       if (top > 30) {
         this.ShowAbs = false
         var opacity = (top / 130) > 1 ? 1 : (top / 130)
-        console.log(opacity)
         this.StyTrans = {
           opacity: opacity
         }
@@ -57,7 +56,11 @@ export default {
     }
   },
   activated () {
+    // 全局事件绑定，会对其他组件产生影响，使用keepalive--activated--deactivated
     window.addEventListener('scroll', this.ScrollTopMethod)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.ScrollTopMethod)
   }
 }
 </script>
