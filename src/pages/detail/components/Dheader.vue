@@ -11,7 +11,6 @@
         <gallary @handleShow="ShowContent" v-show="showwin"></gallary>
          <GameHeader class="_gameHeader" v-show="!ShowAbs" :style="StyTrans">
         </GameHeader>
-        <div class="FillDock"></div>
     </div>
 </template>
 
